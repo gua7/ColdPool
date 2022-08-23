@@ -1,5 +1,5 @@
-## Thanks to Pouriya Alinaghi for the code
-
+## Thanks to Pouriya Alinaghi for the code ##
+## Code of -4 K condition
 
 import numpy as np
 import netCDF4 as nc
@@ -10,23 +10,19 @@ import matplotlib.animation as animation
 from skimage.transform import rescale
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 import matplotlib.patches as mpatches
-"""
-Spyder Editor
 
-This is a temporary script file.
-"""
 
-ds0 = nc.Dataset('nc/01ref/crossxy.0001.thlxy.100.nc')
-ds3 = nc.Dataset('nc/-4/crossxy.0003.wxy.100.nc')
-ds5 = nc.Dataset('nc/-4/cape.lwp.100.nc')
+ds0 = nc.Dataset('nc/01ref/crossxy.0001.thlxy.100.nc') 
+ds3 = nc.Dataset('nc/-4/crossxy.0003.wxy.100.nc') #gust front
+ds5 = nc.Dataset('nc/-4/cape.lwp.100.nc') #cloud
 
 ds1 = nc.Dataset('nc/-4/crossxy.0001.thlxy.100.nc')
 ds2 = nc.Dataset('nc/-4/crossxy.0001.qtxy.100.nc')
 
-ds4 = nc.Dataset('nc/-4/cape.surfprec.100.nc')
+ds4 = nc.Dataset('nc/-4/cape.surfprec.100.nc') #precipitation
 
 ds6 = nc.Dataset('nc/-4/crossxy.0001.uxy.100.nc')
-ds7 = nc.Dataset('nc/-4/crossxy.0001.vxy.100.nc')
+ds7 = nc.Dataset('nc/-4/crossxy.0001.vxy.100.nc') #horizontal wind
 
 
 
